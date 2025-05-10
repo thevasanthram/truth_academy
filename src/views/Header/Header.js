@@ -23,7 +23,7 @@ const navBarDivisions = {
   },
 };
 
-const toSlug = (label) => `/${label.toLowerCase().replace(/\s+/g, "-")}`;
+const toSlug = (label) => `/menu/${label.toLowerCase().replace(/\s+/g, "-")}`;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

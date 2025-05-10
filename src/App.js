@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/:menu_item" element={<MenuBarHandler />} />
+            <Route path="/menu/:menu_item" element={<MenuBarHandler />} />
             <Route
               path="*"
               element={
