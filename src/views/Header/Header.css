@@ -1,0 +1,292 @@
+/* === Base Container === */
+.v-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  position: sticky;
+  top: 0; /* sticks to the top of the page */
+  z-index: 100;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* === Logo and Institute Name === */
+.v-header-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.v-header-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.v-header-institute-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* === Hamburger Toggle (Mobile) === */
+.v-header-nav-toggle {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.v-header-nav-toggle span {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.v-header-nav-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.v-header-nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.v-header-nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* === Desktop Navigation === */
+.v-header-desktop-nav {
+  display: flex;
+  width: auto;
+  margin-right: 5%;
+}
+
+.v-header-nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.v-header-nav-item,
+.v-header-submenu-item {
+  position: relative;
+}
+
+.v-header-menu-label {
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+}
+
+/* === Dropdown Menus (Level 1 and 2) === */
+.v-header-dropdown-menu,
+.v-header-dropdown-submenu {
+  position: absolute;
+  background-color: #00509e;
+  list-style: none;
+  padding: 0px 0;
+  margin: 0;
+  margin-top: 10%;
+  display: none;
+  min-width: 200px;
+  border-radius: 2px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0.5, 0.4);
+  opacity: 0;
+  transform: translateY(2px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 10;
+  right: 1%;
+}
+
+.v-header-dropdown-submenu {
+  top: 0;
+  /* right: px; */
+  margin-top: 0%;
+}
+
+.v-header-suboption-label {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: transparent;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* === Show dropdowns on hover === */
+.v-header-nav-item:hover > .v-header-dropdown-menu,
+.v-header-submenu-item:hover > .v-header-dropdown-submenu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.v-header-submenu-item:hover > .v-header-suboption-label {
+  background-color: #00386f;
+  padding-left: 20px;
+  font-weight: 500;
+  border-left: 3px solid #ffffffc5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* === Unified Styling for Dropdown Items (Labels + Links) === */
+.v-header-dropdown-menu a,
+.v-header-dropdown-submenu a,
+.v-header-dropdown-menu .v-header-menu-label,
+.v-header-dropdown-submenu .v-header-menu-label {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  transition: background-color 0.5s ease, padding-left 0.5s ease;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/* === Hover Effect === */
+.v-header-dropdown-menu a:hover,
+.v-header-dropdown-submenu a:hover,
+.v-header-dropdown-menu .v-header-menu-label:hover,
+.v-header-dropdown-submenu .v-header-menu-label:hover {
+  background-color: #00386f;
+  padding-left: 20px;
+  font-weight: 500;
+  border-left: 3px solid #ffffffc5;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* border-radius: 4px; */
+}
+
+/* Default: Right-side submenu */
+.v-header-dropdown-submenu {
+  top: 0;
+  left: 100%;
+  margin-left: 2px;
+}
+
+/* Modifier for left-aligned submenu (if needed due to overflow) */
+.v-header-dropdown-submenu.align-left {
+  left: auto;
+  right: 100%;
+  margin-left: 0;
+  margin-right: 2px;
+}
+
+/* === Mobile Only === */
+@media screen and (max-width: 768px) {
+  /* ✅ Show hamburger only on small screens */
+  .v-header-nav-toggle {
+    display: flex;
+  }
+
+  .v-header-desktop-nav {
+    display: none;
+  }
+
+  .v-header-nav-section {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #004080;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .v-header-nav-section.show {
+    display: flex;
+  }
+
+  .v-header-mobile-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  .v-header-mobile-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #00335a;
+  }
+
+  .v-header-toggle-label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 8px 15px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .v-header-toggle-label:hover {
+    background-color: #00335a;
+  }
+
+  .v-header-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+  }
+
+  .v-header-link:hover {
+    background-color: #003f80;
+  }
+
+  /* === Accordion Animation === */
+  .v-header-submenu {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .v-header-submenu.show {
+    max-height: 1000px;
+    opacity: 1;
+  }
+
+  /* === Hamburger Menu Animation === */
+  .v-header-mobile-menu > li {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .v-header-nav-section.show .v-header-mobile-menu > li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* === Border Between Submenus === */
+  .v-header-submenu > li {
+    border-bottom: 1px solid #00335a;
+  }
+
+  .v-header-submenu > li:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ✅ Hide hamburger in desktop */
+@media screen and (min-width: 769px) {
+  .v-header-nav-toggle {
+    display: none !important;
+  }
+
+  .v-header-nav-section {
+    display: none;
+  }
+}

@@ -1,0 +1,111 @@
+.state-tuition-container {
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #f5f8ff, #e1f0ff);
+  font-family: "Segoe UI", sans-serif;
+  color: #1d3557;
+  overflow-x: hidden;
+  margin-bottom: 10%;
+}
+
+.state-tuition-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap-reverse;
+}
+
+.state-tuition-image {
+  flex: 1;
+  min-width: 300px;
+  animation: floatImage 6s ease-in-out infinite;
+}
+
+.state-tuition-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.state-tuition-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #002244;
+  border-left: 4px solid #00bcd4;
+  padding-left: 12px;
+  animation: fadeInLeft 1s ease;
+}
+
+.state-tuition-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  animation: fadeInUp 1.2s ease;
+}
+
+/* Animations */
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .state-tuition-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .state-tuition-heading {
+    font-size: 1.6rem;
+  }
+
+  .state-tuition-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .state-tuition-container {
+    padding: 40px 20px;
+  }
+
+  .state-tuition-heading {
+    font-size: 1.4rem;
+  }
+
+  .state-tuition-description {
+    font-size: 0.95rem;
+  }
+}

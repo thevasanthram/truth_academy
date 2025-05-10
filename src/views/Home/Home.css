@@ -1,0 +1,278 @@
+/* Base */
+.home-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #003366;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.home-hero {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    #1b2a49,
+    #2f4f6f,
+    #3a6ea5,
+    #59a5d8,
+    #6cd4ff
+  ); /* Multiple blue-family shades */
+  color: white;
+  padding: 60px 20px;
+  margin-bottom: 40px;
+  margin-top: 5%;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #1b2a49,
+    #2f4f6f,
+    #3a6ea5,
+    #59a5d8,
+    #6cd4ff
+  );
+  background-size: 300% 300%;
+  animation: heroGradientShift 10s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  z-index: 0;
+  opacity: 0.8; /* Optional: tweak if you want the base layer to show more */
+}
+
+@keyframes heroGradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-hero * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Floating Particles */
+
+.floating-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  background-image: radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: 0 0, 10px 10px;
+  animation: floatParticles 10s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes floatParticles {
+  0% {
+    background-position: 0 0, 10px 10px;
+  }
+  100% {
+    background-position: 100px 100px, 110px 110px;
+  }
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #66ffcc, #00ffcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* .hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, rgb(0, 255, 255), rgb(204, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+} */
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  background: linear-gradient(90deg, #00cccc, #66ffff); /* Cooler and smooth */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-subtitle strong {
+  background: linear-gradient(90deg, #00ccff, #66ffcc); /* Ensure gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Ensure no fallback color */
+}
+
+/* Services Section */
+.home-services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #002244;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #007bff;
+  color: white;
+  border-radius: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 25px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Why Choose Us Section */
+.home-why-choose {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.why-item {
+  background-color: #ffffff;
+  padding: 14px 20px 14px 28px;
+  position: relative;
+  border-left: 4px solid #007bff;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #003366;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.why-item .dot {
+  position: absolute;
+  left: 12px;
+  top: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #007bff;
+  border-radius: 50%;
+  animation: pulseDot 1.8s infinite;
+}
+
+@keyframes pulseDot {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Visual Image Section */
+.home-visuals {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-wrapper,
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+}

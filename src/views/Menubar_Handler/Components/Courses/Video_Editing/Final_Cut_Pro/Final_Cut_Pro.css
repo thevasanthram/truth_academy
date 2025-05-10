@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.fcp-section {
+  background: linear-gradient(to bottom right, #f1f7ff, #ffffff);
+  color: #1a1a1a;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10%;
+  text-align: left;
+}
+
+.fcp-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.fcp-content {
+  flex: 1;
+  min-width: 300px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.fcp-heading {
+  font-size: 2.4rem;
+  color: #1a2a5c;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.fcp-heading span {
+  color: #2b65e3;
+}
+
+.fcp-intro {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.fcp-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.fcp-points li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+  padding-left: 28px;
+  position: relative;
+}
+
+.fcp-points li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #2b65e3;
+  font-size: 1rem;
+}
+
+.fcp-conclusion {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.fcp-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fcp-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  animation: fadeInZoom 1.2s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.fcp-image:hover {
+  transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .fcp-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .fcp-heading {
+    font-size: 2rem;
+  }
+
+  .fcp-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .fcp-heading {
+    font-size: 1.6rem;
+  }
+
+  .fcp-image {
+    max-width: 90%;
+  }
+
+  .fcp-points li {
+    padding-left: 24px;
+  }
+}

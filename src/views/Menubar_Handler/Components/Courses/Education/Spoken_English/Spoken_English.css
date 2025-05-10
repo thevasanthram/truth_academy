@@ -1,0 +1,133 @@
+.spoken-english-container {
+  background: linear-gradient(135deg, #fff8f0, #f0f8ff);
+  padding: 60px 30px;
+  font-family: "Segoe UI", sans-serif;
+  scroll-margin-top: 100px;
+  overflow: hidden;
+  text-align: justify;
+  margin-bottom: 10%;
+}
+
+.spoken-english-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.spoken-english-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.spoken-heading {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 20px;
+  border-left: 5px solid #4caf50;
+  padding-left: 15px;
+  animation: fadeInSlide 1.2s ease-out;
+}
+
+.highlight {
+  color: #4caf50;
+}
+
+.spoken-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.spoken-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.spoken-list li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.spoken-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.spoken-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spoken-english-image {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: floatIn 2s ease forwards;
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes floatIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .spoken-english-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .spoken-heading {
+    font-size: 1.8rem;
+  }
+
+  .spoken-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .spoken-heading {
+    font-size: 1.5rem;
+  }
+
+  .spoken-description,
+  .spoken-list li {
+    font-size: 0.95rem;
+  }
+
+  .spoken-english-image {
+    border-radius: 12px;
+  }
+}

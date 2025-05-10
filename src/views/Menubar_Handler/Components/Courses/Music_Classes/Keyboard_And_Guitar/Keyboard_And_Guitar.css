@@ -1,0 +1,178 @@
+.music-class-container {
+  background: linear-gradient(145deg, #fefefe, #eaf4f4);
+  padding: 60px 30px;
+  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
+  position: relative;
+  scroll-margin-top: 100px;
+  text-align: left;
+  margin-bottom: 10%;
+}
+
+.music-class-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: relative;
+}
+
+.music-content {
+  flex: 1;
+  min-width: 300px;
+  z-index: 2;
+}
+
+.music-heading {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  border-left: 5px solid #ff6f61;
+  padding-left: 15px;
+  animation: slideFadeIn 1.2s ease-in-out;
+}
+
+.highlight {
+  color: #ff6f61;
+}
+
+.music-summary {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.music-points {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.music-points li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.music-points li::before {
+  content: "🎵";
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+  color: #ff6f61;
+}
+
+.music-footer {
+  font-size: 1rem;
+  color: #444;
+}
+
+.music-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-class-image {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  animation: floatIn 2s ease forwards;
+}
+
+/* Animations */
+@keyframes slideFadeIn {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floatIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Floating music notes animation */
+.floating-notes::before,
+.floating-notes::after {
+  content: "♪ ♫ ♬";
+  position: absolute;
+  font-size: 2.5rem;
+  color: rgba(255, 111, 97, 0.15);
+  animation: notesFloat 10s linear infinite;
+}
+
+.floating-notes::after {
+  top: 20%;
+  left: 80%;
+  animation-delay: 5s;
+}
+
+.floating-notes::before {
+  top: 60%;
+  left: 10%;
+}
+
+@keyframes notesFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .music-class-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .music-heading {
+    font-size: 1.8rem;
+  }
+
+  .music-summary {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .music-heading {
+    font-size: 1.5rem;
+  }
+
+  .music-summary,
+  .music-points li {
+    font-size: 0.95rem;
+  }
+
+  .music-class-image {
+    border-radius: 10px;
+  }
+}

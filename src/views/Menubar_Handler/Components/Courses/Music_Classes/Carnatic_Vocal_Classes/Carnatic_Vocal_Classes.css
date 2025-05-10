@@ -1,0 +1,174 @@
+.carnatic-container {
+  background: linear-gradient(180deg, #fffef8, #fdf5e6);
+  padding: 60px 20px;
+  position: relative;
+  font-family: "Merriweather", serif;
+  scroll-margin-top: 100px;
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 10%;
+}
+
+.carnatic-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  z-index: 2;
+  position: relative;
+}
+
+.carnatic-content {
+  flex: 1;
+  min-width: 300px;
+  z-index: 2;
+}
+
+.carnatic-heading {
+  font-size: 2.2rem;
+  color: #8b0000;
+  border-left: 5px solid #c79b45;
+  padding-left: 15px;
+  animation: slideInRight 1.2s ease-out;
+}
+
+.highlight {
+  color: #c79b45;
+}
+
+.carnatic-summary {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  margin: 15px 0;
+}
+
+.carnatic-points {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.carnatic-points li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  color: #2e2e2e;
+}
+
+.carnatic-points li::before {
+  content: "🎶";
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+  color: #c79b45;
+}
+
+.carnatic-footer {
+  font-size: 1rem;
+  color: #5a3921;
+}
+
+.carnatic-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.carnatic-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  animation: floatIn 1.5s ease-out;
+}
+
+/* Background wave animation */
+.carnatic-bg-waves::before,
+.carnatic-bg-waves::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200px;
+  top: 0;
+  left: -50%;
+  background: url("https://svgshare.com/i/138X.svg") repeat-x;
+  animation: waveAnim 25s linear infinite;
+  opacity: 0.05;
+}
+
+.carnatic-bg-waves::after {
+  top: auto;
+  bottom: 0;
+  animation-delay: 10s;
+}
+
+/* Animations */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes waveAnim {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .carnatic-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .carnatic-heading {
+    font-size: 1.8rem;
+  }
+
+  .carnatic-summary,
+  .carnatic-points li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .carnatic-heading {
+    font-size: 1.5rem;
+  }
+
+  .carnatic-summary,
+  .carnatic-footer {
+    font-size: 0.95rem;
+  }
+
+  .carnatic-image {
+    border-radius: 12px;
+  }
+}
