@@ -11,27 +11,25 @@ import ErrorBoundary from "./views/ErrorBoundary/ErrorBoundary";
 function App() {
   return (
     <Router>
-      <ErrorBoundary>
-        <Header />
-        <div className="App">
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/:menu_item" element={<MenuBarHandler />} />
-              <Route
-                path="*"
-                element={
-                  <div className="menu-bar-handler">
-                    <NotFound />
-                  </div>
-                }
-              />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </ErrorBoundary>
+      <Header />
+      <div className="App">
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/:menu_item" element={<MenuBarHandler />} />
+            <Route
+              path="*"
+              element={
+                <div className="menu-bar-handler">
+                  <NotFound />
+                </div>
+              }
+            />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
