@@ -5,7 +5,7 @@
   align-items: center;
   background-color: #003366;
   color: white;
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-family: sans-serif;
   position: sticky;
   top: 0; /* sticks to the top of the page */
@@ -13,22 +13,55 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* === Logo and Institute Name === */
 .v-header-logo-section {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.v-header-logo-section:hover {
+  transform: scale(1.05);
 }
 
 .v-header-logo {
-  height: 40px;
+  height: 55px;
   margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.v-header-logo-section:hover .v-header-logo {
+  transform: rotate(5deg);
+}
+
+.v-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .v-header-institute-name {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6rem;
   color: white;
+  transition: color 0.3s ease;
+  letter-spacing: 4px;
+}
+
+.v-header-slogan {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  color: #66ffcc;
+  font-style: bold;
+  transition: color 0.3s ease;
+  letter-spacing: 2.5px;
+}
+
+.v-header-logo-section:hover .v-header-institute-name,
+.v-header-logo-section:hover .v-header-slogan {
+  color: #00ffcc;
 }
 
 /* === Hamburger Toggle (Mobile) === */
@@ -179,6 +212,18 @@
 
 /* === Mobile Only === */
 @media screen and (max-width: 768px) {
+  .v-header-logo {
+    height: 50px;
+  }
+
+  .v-header-institute-name {
+    font-size: 1.2rem;
+  }
+
+  .v-header-slogan {
+    font-size: 0.9rem;
+  }
+
   /* ✅ Show hamburger only on small screens */
   .v-header-nav-toggle {
     display: flex;
@@ -288,5 +333,19 @@
 
   .v-header-nav-section {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .v-header-logo {
+    height: 40px;
+  }
+
+  .v-header-institute-name {
+    font-size: 1rem;
+  }
+
+  .v-header-slogan {
+    font-size: 0.8rem;
   }
 }

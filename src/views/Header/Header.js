@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
-import TruthAcademyLogo from "./../../images/logos/Truth Academy Logo.jpeg";
+import TruthAcademyLogo from "./../../images/logos/Truth Academy Logo.png";
 
 const navBarDivisions = {
   Courses: {
@@ -23,12 +24,14 @@ const navBarDivisions = {
   },
 };
 
-const toSlug = (label) => `/menu/${label.toLowerCase().replace(/\s+/g, "-")}`;
+const toSlug = (label) => `/${label.toLowerCase().replace(/\s+/g, "-")}`;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openMenus, setOpenMenus] = useState({});
   const [dropdownPositions, setDropdownPositions] = useState({});
+
+  const navigate = useNavigate();
 
   const toggleHamburger = () => {
     setIsMenuOpen((prev) => !prev);
@@ -99,15 +102,18 @@ const Header = () => {
 
   return (
     <header className="v-header-container">
-      <div className="v-header-logo-section">
-        <a href="/" className="v-header-logo-link">
+      <div className="v-header-logo-section" onClick={() => navigate("/")}>
+        <div className="v-header-logo-link">
           <img
             src={TruthAcademyLogo}
             alt="Institute Logo"
             className="v-header-logo"
           />
-        </a>
-        <span className="v-header-institute-name">Truth Academy</span>
+        </div>
+        <div className="v-header-text">
+          <span className="v-header-institute-name">Truth Academy</span>
+          <span className="v-header-slogan">SCHOOL OF KNOWLEDGE</span>
+        </div>
       </div>
 
       <div
@@ -171,12 +177,12 @@ const Header = () => {
                   return (
                     <li key={subKey} className="v-header-submenu-item">
                       {isLeaf ? (
-                        <a
-                          href={toSlug(subKey)}
+                        <Link
+                          to={toSlug(subKey)}
                           className="v-header-suboption-link"
                         >
                           {subKey}
-                        </a>
+                        </Link>
                       ) : (
                         <span className="v-header-menu-label v-header-suboption-label">
                           {subKey}
@@ -186,7 +192,7 @@ const Header = () => {
                         <ul className="v-header-dropdown-submenu">
                           {Object.entries(subSub).map(([leaf]) => (
                             <li key={leaf}>
-                              <a href={toSlug(leaf)}>{leaf}</a>
+                              <Link to={toSlug(leaf)}>{leaf}</Link>
                             </li>
                           ))}
                         </ul>
