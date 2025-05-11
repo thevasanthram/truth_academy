@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.169c876d.css",
+    "main.js": "/static/js/main.67caae1a.js",
+    "static/js/433.349973de.chunk.js": "/static/js/433.349973de.chunk.js",
+    "static/js/204.19727c2f.chunk.js": "/static/js/204.19727c2f.chunk.js",
+    "static/media/Spoken_English_Image.gif": "/static/media/Spoken_English_Image.e3c7f8afca521c2b25f6.gif",
+    "static/media/Truth Academy Logo.png": "/static/media/Truth Academy Logo.0e0bf8a55c37cf7141d4.png",
+    "static/media/CBSE_Tuition_Image.jpg": "/static/media/CBSE_Tuition_Image.e4f7055f4fc2152e09fe.jpg",
+    "static/media/State_Board_Tuition_Image.png": "/static/media/State_Board_Tuition_Image.d09a2ed6fc7d6df3658a.png",
+    "static/media/Carnatic_Vocal_Image.png": "/static/media/Carnatic_Vocal_Image.7fbf14aee2669e1c9a3b.png",
+    "static/media/Final_Cut_Pro_Image.jpg": "/static/media/Final_Cut_Pro_Image.23c4075c170f88610aa1.jpg",
+    "static/media/Keyboard_And_Guitar_Image.webp": "/static/media/Keyboard_And_Guitar_Image.e60081af2696eb0d1d30.webp",
+    "index.html": "/index.html",
+    "main.169c876d.css.map": "/static/css/main.169c876d.css.map",
+    "main.67caae1a.js.map": "/static/js/main.67caae1a.js.map",
+    "433.349973de.chunk.js.map": "/static/js/433.349973de.chunk.js.map",
+    "204.19727c2f.chunk.js.map": "/static/js/204.19727c2f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.169c876d.css",
+    "static/js/main.67caae1a.js"
+  ]
+}
