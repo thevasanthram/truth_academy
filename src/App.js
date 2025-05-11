@@ -7,7 +7,7 @@ import Home from "./views/Home/Home";
 import MenuBarHandler from "./views/Menubar_Handler/MenuBarHandler";
 import NotFound from "./views/Not_Found/NotFound";
 
-function App() {
+function App() { 
   return (
     <Router>
       <Header />
