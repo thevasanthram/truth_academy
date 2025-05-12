@@ -5,6 +5,7 @@ import SpokenEnglish from "./Components/Courses/Education/Spoken_English/Spoken_
 import KeyboardGuitar from "./Components/Courses/Music_Classes/Keyboard_And_Guitar/Keyboard_And_Guitar";
 import CarnaticVocalClasses from "./Components/Courses/Music_Classes/Carnatic_Vocal_Classes/Carnatic_Vocal_Classes";
 import FinalCutPro from "./Components/Courses/Video_Editing/Final_Cut_Pro/Final_Cut_Pro";
+import Founder from "./Components/Contact_Us/Founder/Founder";
 // Import other components as needed
 
 const componentsMap = {
@@ -14,6 +15,7 @@ const componentsMap = {
   KeyboardGuitar,
   CarnaticVocalClasses,
   FinalCutPro,
+  Founder,
 };
 
 export default componentsMap;

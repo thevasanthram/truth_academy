@@ -19,7 +19,7 @@ const navBarDivisions = {
     },
   },
   "About Us": {
-    "Founder & President": {},
+    Founder: {},
     Team: {},
   },
 };

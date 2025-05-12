@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Nunito&display=swap");
+
+.founder-section {
+  background: #f4f4f9;
+  padding: 4rem 2rem;
+  scroll-margin-top: 80px;
+  font-family: "Nunito", sans-serif;
+}
+
+.founder-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.founder-image-card {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.founder-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  position: relative;
+  animation: pulseBorder 2.5s infinite;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+}
+
+.founder-image:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulseBorder {
+  0% {
+    box-shadow: 0 0 0 0 rgba(102, 204, 153, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(102, 204, 153, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(102, 204, 153, 0);
+  }
+}
+
+.founder-details {
+  text-align: justify;
+  flex: 2 1 500px;
+}
+
+.founder-name {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  color: #1c3b4f;
+  margin-bottom: 0.5rem;
+}
+
+.founder-role {
+  font-size: 1.2rem;
+  color: #66cc99;
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+
+.founder-description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.founder-highlights {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.founder-highlights li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.founder-contact-info {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.founder-contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #1c3b4f;
+}
+
+.founder-social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.founder-social-icons a {
+  font-size: 1.5rem;
+  color: #1c3b4f;
+  transition: color 0.3s ease;
+}
+
+.founder-social-icons a:hover {
+  color: #66cc99;
+}
+
+@media (max-width: 768px) {
+  .founder-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .founder-details {
+    flex: 1 1 auto;
+  }
+
+  .founder-contact-info {
+    align-items: center;
+  }
+
+  .founder-social-icons {
+    justify-content: center;
+  }
+}
