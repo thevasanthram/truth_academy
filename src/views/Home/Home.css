@@ -1,29 +1,25 @@
 /* Base */
 .home-container {
   font-family: "Segoe UI", sans-serif;
-  color: #003366;
-  padding: 20px;
+  color: #cce6ff; /* Light blue text for dark theme */
+  background-color: #0d1117; /* Deep black-blue background */
+  /* padding: 20px 0px; */
   overflow-x: hidden;
 }
-
 /* Hero Section */
 .home-hero {
   position: relative;
-  background: linear-gradient(
-    135deg,
-    #1b2a49,
-    #2f4f6f,
-    #3a6ea5,
-    #59a5d8,
-    #6cd4ff
-  ); /* Multiple blue-family shades */
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   color: white;
-  padding: 60px 20px;
+  padding: 120px 0;
   margin-bottom: 40px;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   text-align: center;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+  /* border-radius: 20px; */
+  /* width: 100%; */
 }
 
 .home-hero::before {
@@ -35,16 +31,18 @@
   height: 100%;
   background: linear-gradient(
     135deg,
-    #1b2a49,
-    #2f4f6f,
-    #3a6ea5,
-    #59a5d8,
-    #6cd4ff
+    #00f5ff,
+    #00c6ff,
+    #0072ff,
+    #000dff,
+    #8e2de2,
+    #4a00e0
   );
-  background-size: 300% 300%;
-  animation: heroGradientShift 10s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  background-size: 400% 400%;
+  animation: heroGradientShift 15s ease-in-out infinite;
   z-index: 0;
-  opacity: 0.8; /* Optional: tweak if you want the base layer to show more */
+  opacity: 0.15;
+  /* border-radius: 20px; */
 }
 
 @keyframes heroGradientShift {
@@ -64,9 +62,40 @@
   z-index: 2;
 }
 
-/* Floating Particles */
+/* Headings with Neon/Aurora Effect */
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #00ffe7, #7df9ff, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
 
-.floating-particles {
+.hero-subtitle {
+  font-size: 1.4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  background: linear-gradient(90deg, #ff8af2, #7efff5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.hero-subtitle strong {
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Optional: Floating Aurora Particles */
+/* .floating-particles {
   position: absolute;
   top: 0;
   left: 0;
@@ -74,86 +103,48 @@
   height: 100%;
   pointer-events: none;
   z-index: 1;
-  background-image: radial-gradient(white 1px, transparent 1px),
-    radial-gradient(white 1px, transparent 1px);
-  background-size: 30px 30px;
-  background-position: 0 0, 10px 10px;
-  animation: floatParticles 10s linear infinite;
-  opacity: 0.5;
-}
-
-@keyframes floatParticles {
-  0% {
-    background-position: 0 0, 10px 10px;
-  }
-  100% {
-    background-position: 100px 100px, 110px 110px;
-  }
-}
-
-.hero-title {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, #66ffcc, #00ffcc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-/* .hero-title {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, rgb(0, 255, 255), rgb(204, 0, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  background-image: radial-gradient(#ffffff 1px, transparent 1px),
+    radial-gradient(#ffffff 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  animation: floatParticles 30s linear infinite;
+  opacity: 0.1;
 } */
 
-.hero-subtitle {
-  font-size: 1.3rem;
-  max-width: 900px;
-  margin: 0 auto;
-  line-height: 1.8;
-  background: linear-gradient(90deg, #00cccc, #66ffff); /* Cooler and smooth */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-.hero-subtitle strong {
-  background: linear-gradient(90deg, #00ccff, #66ffcc); /* Ensure gradient */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent; /* Ensure no fallback color */
-}
+/* @keyframes floatParticles {
+  0% {
+    background-position: 0 0, 20px 20px;
+  }
+  100% {
+    background-position: 200px 200px, 220px 220px;
+  }
+} */
 
 /* Services Section */
 .home-services {
   padding: 40px 20px;
   text-align: center;
+  background-color: #0b0f1a;
 }
 
 .section-title {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #002244;
+  color: #66ccff;
 }
 
 .cards-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(2, auto); /* 2 rows */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .service-card {
-  background-color: #007bff;
-  color: white;
+  background-color: #1f2a40;
+  color: #cce6ff;
   border-radius: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   padding: 25px 20px;
@@ -174,6 +165,7 @@
 .home-why-choose {
   padding: 40px 20px;
   text-align: center;
+  background-color: #0b0f1a;
 }
 
 .why-list {
@@ -188,13 +180,13 @@
 }
 
 .why-item {
-  background-color: #ffffff;
+  background-color: #111827;
   padding: 14px 20px 14px 28px;
   position: relative;
-  border-left: 4px solid #007bff;
+  border-left: 4px solid #3399ff;
   font-size: 1rem;
   font-weight: 500;
-  color: #003366;
+  color: #cce6ff;
   border-radius: 4px;
   transition: all 0.3s ease;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
@@ -206,7 +198,7 @@
   top: 18px;
   width: 8px;
   height: 8px;
-  background-color: #007bff;
+  background-color: #3399ff;
   border-radius: 50%;
   animation: pulseDot 1.8s infinite;
 }
@@ -230,6 +222,7 @@
 .home-visuals {
   padding: 40px 20px;
   text-align: center;
+  background-color: #0b0f1a;
 }
 
 .image-grid {

@@ -18,9 +18,12 @@ const navBarDivisions = {
       "Final Cut Pro": {},
     },
   },
+  Registration: {
+    "Course Registration": {},
+  },
   "About Us": {
     Founder: {},
-    Team: {},
+    // Team: {},
   },
 };
 

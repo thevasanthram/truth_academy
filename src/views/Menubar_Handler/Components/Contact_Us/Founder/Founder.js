@@ -25,24 +25,32 @@ const Founder = () => {
           />
         </div>
         <div className="founder-details">
-          <h1 className="founder-name">Sam</h1>
-          <h2 className="founder-role">Founder & President, Truth Academy</h2>
+          <h1 className="founder-name">Oswald S. Sam Israel</h1>
+          <h2 className="founder-role">
+            Educator | Founder of Truth Academy | Visionary Leader
+          </h2>
           <p className="founder-description">
-            Dr. A. K. Moideen is a distinguished Islamic scholar and
-            educationalist with over 20 years of experience in academic
-            leadership and spiritual guidance. A Ph.D. graduate from Al-Azhar
-            University, Cairo, his lifelong mission has been to integrate
-            traditional Islamic knowledge with modern educational frameworks.
-            Under his visionary leadership, Truth Academy has become a beacon
-            for moral development and intellectual excellence.
+            Oswald S. Sam Israel is a passionate educator and the founder of
+            Truth Academy, a growing institution committed to fostering academic
+            excellence and personal growth. His journey began at a renowned
+            International School, where his experience as a teacher inspired a
+            deeper calling—to create a learning environment rooted in purpose,
+            integrity, and innovation.
+            <br />
+            <br />
+            Motivated by a vision to transform education, Oswald established
+            Truth Academy guided by the principle, “Learn life. Experience
+            knowledge,” the academy was built not just to teach, but to
+            inspire—helping students grow into thoughtful, capable individuals
+            ready to meet the challenges of the real world.
           </p>
 
-          <ul className="founder-highlights">
+          {/* <ul className="founder-highlights">
             <li>📖 Ph.D. in Islamic Studies – Al-Azhar University</li>
             <li>🕌 20+ years of teaching & scholarly leadership</li>
             <li>✍️ Author of 10+ books on Islamic thought and social reform</li>
             <li>🌍 Speaker at various international Islamic conferences</li>
-          </ul>
+          </ul> */}
 
           <div className="founder-contact-info">
             <p>

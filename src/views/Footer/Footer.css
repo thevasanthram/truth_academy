@@ -1,6 +1,6 @@
 .footer-container {
-  background: linear-gradient(145deg, #002244, #003366);
-  color: #fff;
+  background: linear-gradient(145deg, #0d1b2a, #1b263b);
+  color: #e0f7fa;
   padding: 50px 30px 20px;
   font-family: "Segoe UI", sans-serif;
   overflow-x: hidden;
@@ -24,14 +24,16 @@
 .footer-section h2 {
   font-size: 1.4rem;
   margin-bottom: 15px;
-  border-bottom: 2px solid #00bcd4;
+  border-bottom: 2px solid #66ccff;
   display: inline-block;
   padding-bottom: 5px;
+  color: #ffffff;
 }
 
 .footer-section p {
   font-size: 1rem;
   line-height: 1.7;
+  color: #cce7f5;
 }
 
 .social-icons {
@@ -42,12 +44,24 @@
   margin-top: 10px;
 }
 
+.social-icons a {
+  color: #66ccff;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00e5ff;
+  transform: scale(1.2);
+}
+
 .footer-bottom {
   text-align: center;
   font-size: 0.9rem;
   padding-top: 30px;
-  border-top: 1px solid #ffffff20;
+  border-top: 1px solid #ffffff30;
   margin-top: 40px;
+  color: #b0d0e8;
 }
 
 @keyframes fadeUp {

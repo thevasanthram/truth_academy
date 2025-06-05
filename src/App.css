@@ -1,10 +1,14 @@
 .App {
   text-align: center;
+  background-color: #1f2a35; /* Dark blue-gray background */
+  min-height: 100vh;
+  color: #e2f1ff; /* Soft white-blue text for readability */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  filter: drop-shadow(0 0 10px #00d4ff); /* Neon glow effect */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +18,27 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1b252f; /* Slightly deeper dark */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #e2f1ff;
+  box-shadow: inset 0 -5px 10px rgba(0, 212, 255, 0.2);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #48c6ef; /* Bright light blue */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #00d4ff;
+  text-shadow: 0 0 6px #00d4ff;
 }
 
 @keyframes App-logo-spin {

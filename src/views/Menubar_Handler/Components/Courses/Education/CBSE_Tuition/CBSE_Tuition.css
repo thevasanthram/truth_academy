@@ -1,10 +1,15 @@
 .cbse-tuition-container {
-  background: linear-gradient(135deg, #e3f2fd, #d1ecff, #f0faff);
-  padding: 60px 30px;
+  background: linear-gradient(
+    135deg,
+    #1e2a38,
+    #263545,
+    #2c3e50
+  ); /* Light dark bluish gradient */
+  padding: 100px 30px;
   font-family: "Segoe UI", sans-serif;
   overflow: hidden;
   scroll-margin-top: 100px;
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
 }
 
 .cbse-tuition-inner {
@@ -24,16 +29,17 @@
 
 .cbse-heading {
   font-size: 2.2rem;
-  color: #002244;
+  color: #00d4ff; /* Bright Sky Blue */
   margin-bottom: 20px;
-  border-left: 5px solid #00bcd4;
+  border-left: 5px solid #48c6ef; /* Lighter Blue Gradient Border */
   padding-left: 15px;
+  text-shadow: 0 0 8px #00bfff;
 }
 
 .cbse-description {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #333;
+  color: #e2f1ff; /* Very light blue-white for readability */
   margin-bottom: 20px;
 }
 
@@ -48,13 +54,13 @@
 .cbse-tuition-image {
   max-width: 100%;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 200, 255, 0.4); /* Soft glow */
   animation: floatIn 2s ease forwards;
 }
 
 .image-loading {
   font-size: 1rem;
-  color: #555;
+  color: #aacde6; /* Muted bright blue */
 }
 
 /* Animation */

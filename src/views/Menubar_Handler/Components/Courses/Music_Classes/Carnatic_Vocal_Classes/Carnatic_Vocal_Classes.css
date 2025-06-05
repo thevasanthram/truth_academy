@@ -1,12 +1,13 @@
 .carnatic-container {
-  background: linear-gradient(180deg, #fffef8, #fdf5e6);
+  background: linear-gradient(180deg, #0e1016, #0b1a26);
   padding: 60px 20px;
   position: relative;
   font-family: "Merriweather", serif;
   scroll-margin-top: 100px;
   overflow: hidden;
   text-align: left;
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
+  color: #dcefff;
 }
 
 .carnatic-inner {
@@ -29,19 +30,19 @@
 
 .carnatic-heading {
   font-size: 2.2rem;
-  color: #8b0000;
-  border-left: 5px solid #c79b45;
+  color: #00cfff;
+  border-left: 5px solid #00d4ff;
   padding-left: 15px;
   animation: slideInRight 1.2s ease-out;
 }
 
 .highlight {
-  color: #c79b45;
+  color: #00d4ff;
 }
 
 .carnatic-summary {
   font-size: 1.05rem;
-  color: #444;
+  color: #c3d9e5;
   line-height: 1.8;
   margin: 15px 0;
 }
@@ -56,7 +57,7 @@
   position: relative;
   padding-left: 30px;
   margin-bottom: 12px;
-  color: #2e2e2e;
+  color: #b5c9d6;
 }
 
 .carnatic-points li::before {
@@ -64,12 +65,12 @@
   position: absolute;
   left: 0;
   font-size: 1.1rem;
-  color: #c79b45;
+  color: #00d4ff;
 }
 
 .carnatic-footer {
   font-size: 1rem;
-  color: #5a3921;
+  color: #a0bccc;
 }
 
 .carnatic-image-wrapper {
@@ -85,7 +86,7 @@
   width: 100%;
   max-width: 450px;
   border-radius: 20px;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 25px rgba(0, 255, 255, 0.1);
   animation: floatIn 1.5s ease-out;
 }
 
@@ -101,6 +102,7 @@
   background: url("https://svgshare.com/i/138X.svg") repeat-x;
   animation: waveAnim 25s linear infinite;
   opacity: 0.05;
+  filter: brightness(0.7) invert(1);
 }
 
 .carnatic-bg-waves::after {
