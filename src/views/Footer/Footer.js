@@ -25,18 +25,20 @@ const Footer = () => {
 
         <div className="footer-section contact">
           <h2>Contact Us</h2>
-          <p>📞 +91 9876543210</p>
-          <p>📧 truthacademy@example.com</p>
+          <p>📞 +91 9344349083</p>
+          <p>📧 truthacademychennai@gmail.com</p>
           <Suspense fallback={<div>Loading icons...</div>}>
             <div className="social-icons">
-              <LazyIcon href="tel:+919876543210" icon="phone" label="Call" />
+              <LazyIcon href="tel:+919344349083" icon="phone" label="Call" />
               <LazyIcon
-                href="mailto:truthacademy@example.com"
+                href="mailto:truthacademychennai@gmail.com
+
+"
                 icon="email"
                 label="Email"
               />
               <LazyIcon
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919344349083"
                 icon="whatsapp"
                 label="WhatsApp"
               />
@@ -64,11 +66,11 @@ const Footer = () => {
           <p>
             Truth Academy,
             <br />
-            123 Knowledge Street,
+            L-362, 15th Cross Street Thiruvalluvar Nagar,
             <br />
-            Chennai, Tamil Nadu, 641001
+            Thiruvanmiyur, Chennai,
             <br />
-            India
+            Tamil Nadu, India - 641001
           </p>
         </div>
       </motion.div>

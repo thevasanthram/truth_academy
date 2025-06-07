@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { motion } from "framer-motion";
 import "./Home.css";
+import VisualGallery from "./../VisualGallery/VisualGallery";
 
 // Lazy load images
 const LazyImage = React.lazy(() => import("../LazyLoading/LazyImage"));
@@ -115,7 +116,7 @@ const Home = () => {
       </motion.section>
 
       {/* Image & Visual Content */}
-      <section className="home-visuals">
+      {/*<section className="home-visuals">
         <h2 className="section-title">Experience Truth Academy</h2>
         <div className="image-grid">
           <Suspense fallback={<div>Loading image...</div>}>
@@ -127,7 +128,8 @@ const Home = () => {
             <LazyImage src="/images/editing.jpg" alt="Video Editing Session" />
           </Suspense>
         </div>
-      </section>
+      </section>*/}
+      <VisualGallery />
     </div>
   );
 };

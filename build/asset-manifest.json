@@ -1,25 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.5329d812.css",
-    "main.js": "/static/js/main.14f61ee4.js",
+    "main.css": "/static/css/main.e170ffc6.css",
+    "main.js": "/static/js/main.ffb425eb.js",
     "static/js/433.7cec1a70.chunk.js": "/static/js/433.7cec1a70.chunk.js",
     "static/js/184.9035c6c9.chunk.js": "/static/js/184.9035c6c9.chunk.js",
+    "static/media/poster-video.mp4": "/static/media/poster-video.6d16b9c59f24da655437.mp4",
     "static/media/Spoken_English_Image.gif": "/static/media/Spoken_English_Image.e3c7f8afca521c2b25f6.gif",
     "static/media/Truth Academy Logo.png": "/static/media/Truth Academy Logo.0e0bf8a55c37cf7141d4.png",
+    "static/media/truth_academy4.jpeg": "/static/media/truth_academy4.82a4e82b44bf912ca03b.jpeg",
+    "static/media/truth_academy2.jpeg": "/static/media/truth_academy2.3f3fb1dc7ef6dc4751d5.jpeg",
+    "static/media/truth_academy5.jpeg": "/static/media/truth_academy5.099e196d567a9e6f7c2b.jpeg",
+    "static/media/truth_academy3.jpeg": "/static/media/truth_academy3.1e68047a9d0e695788ac.jpeg",
+    "static/media/truth_academy1.jpeg": "/static/media/truth_academy1.d8c6468e42da56084c9d.jpeg",
     "static/media/CBSE_Tuition_Image.jpg": "/static/media/CBSE_Tuition_Image.e4f7055f4fc2152e09fe.jpg",
+    "static/media/poster1.jpeg": "/static/media/poster1.c69b67c9a1be849c17bb.jpeg",
+    "static/media/poster4.jpeg": "/static/media/poster4.aa40144098595a04aeed.jpeg",
+    "static/media/poster3.jpeg": "/static/media/poster3.a6d57ce051398faf60dc.jpeg",
     "static/media/State_Board_Tuition_Image.png": "/static/media/State_Board_Tuition_Image.d09a2ed6fc7d6df3658a.png",
+    "static/media/poster2.jpeg": "/static/media/poster2.a8a4dd411800295c899a.jpeg",
     "static/media/Carnatic_Vocal_Image.png": "/static/media/Carnatic_Vocal_Image.7fbf14aee2669e1c9a3b.png",
     "static/media/FounderImage.jpeg": "/static/media/FounderImage.c12cea92f493ecc0fa6e.jpeg",
     "static/media/Final_Cut_Pro_Image.jpg": "/static/media/Final_Cut_Pro_Image.23c4075c170f88610aa1.jpg",
     "static/media/Keyboard_And_Guitar_Image.webp": "/static/media/Keyboard_And_Guitar_Image.e60081af2696eb0d1d30.webp",
     "index.html": "/index.html",
-    "main.5329d812.css.map": "/static/css/main.5329d812.css.map",
-    "main.14f61ee4.js.map": "/static/js/main.14f61ee4.js.map",
+    "main.e170ffc6.css.map": "/static/css/main.e170ffc6.css.map",
+    "main.ffb425eb.js.map": "/static/js/main.ffb425eb.js.map",
     "433.7cec1a70.chunk.js.map": "/static/js/433.7cec1a70.chunk.js.map",
     "184.9035c6c9.chunk.js.map": "/static/js/184.9035c6c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5329d812.css",
-    "static/js/main.14f61ee4.js"
+    "static/css/main.e170ffc6.css",
+    "static/js/main.ffb425eb.js"
   ]
 }
