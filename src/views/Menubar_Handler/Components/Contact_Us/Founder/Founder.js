@@ -57,7 +57,7 @@ const Founder = () => {
               <FaEnvelope /> truthacademychennai@gmail.com
             </p>
             <p>
-              <FaPhone /> +91 98765 43210
+              <FaPhone /> +91 9344349083
             </p>
           </div>
 
