@@ -1,6 +1,6 @@
 .carnatic-container {
   background: linear-gradient(180deg, #0e1016, #0b1a26);
-  padding: 60px 20px;
+  padding: 100px 20px;
   position: relative;
   font-family: "Merriweather", serif;
   scroll-margin-top: 100px;
@@ -161,6 +161,9 @@
 }
 
 @media (max-width: 600px) {
+  .carnatic-container {
+    padding: 60px 20px;
+  }
   .carnatic-heading {
     font-size: 1.5rem;
   }

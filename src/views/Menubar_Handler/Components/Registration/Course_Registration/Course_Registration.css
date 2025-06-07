@@ -43,6 +43,10 @@
   text-align: left;
 }
 
+.course-form {
+  width: 90%;
+}
+
 .required {
   color: #ff5370;
   margin-left: 3px;
@@ -171,7 +175,7 @@ button[type="submit"]:disabled {
   }
 
   .title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   button[type="submit"] {

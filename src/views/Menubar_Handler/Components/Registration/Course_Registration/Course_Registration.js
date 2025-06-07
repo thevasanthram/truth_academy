@@ -105,7 +105,7 @@ export default function CourseRegistration() {
       <div className="course-registration-container">
         <h2 className="title">Course Registration</h2>
         <form className="course-form" onSubmit={handleSubmit} noValidate>
-          <label>
+          <label className="registration-form-inputs">
             Full Name<span className="required">*</span>
             <input
               type="text"
@@ -117,7 +117,7 @@ export default function CourseRegistration() {
             />
           </label>
 
-          <label>
+          <label className="registration-form-inputs">
             Email Address<span className="required">*</span>
             <input
               type="email"
@@ -129,7 +129,7 @@ export default function CourseRegistration() {
             />
           </label>
 
-          <label>
+          <label className="registration-form-inputs">
             Phone Number
             <input
               type="tel"
@@ -140,7 +140,7 @@ export default function CourseRegistration() {
             />
           </label>
 
-          <label>
+          <label className="registration-form-inputs">
             Select Course<span className="required">*</span>
             <select
               name="course"
@@ -157,7 +157,7 @@ export default function CourseRegistration() {
             </select>
           </label>
 
-          <label>
+          <label className="registration-form-inputs">
             Message
             <textarea
               name="message"
@@ -168,15 +168,20 @@ export default function CourseRegistration() {
             />
           </label>
 
-          <button type="submit" disabled={status?.loading}>
+          {/* <button type="submit" disabled={status?.loading}>
             {status?.loading ? "Sending..." : "Register Now"}
-          </button>
+          </button> */}
 
-          {status?.error && <p className="status error">{status.error}</p>}
+          {/* {status?.error && <p className="status error">{status.error}</p>}
           {status?.success && (
             <p className="status success">{status.success}</p>
-          )}
+          )} */}
         </form>
+        <button type="submit" onClick={handleSubmit} disabled={status?.loading}>
+          {status?.loading ? "Sending..." : "Register Now"}
+        </button>
+        {status?.error && <p className="status error">{status.error}</p>}
+        {status?.success && <p className="status success">{status.success}</p>}
       </div>
     </section>
   );

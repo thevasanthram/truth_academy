@@ -82,3 +82,22 @@
     font-size: 1.6rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .home-visuals {
+    padding: 20px 20px;
+  }
+
+  .course-highlights {
+    background: linear-gradient(160deg, #0b0f1a, rgb(1, 13, 22));
+    padding: 20px 20px 40px 20px;
+  }
+
+  .image-grid {
+    gap: 50px;
+  }
+
+  .poster-grid {
+    gap: 50px;
+  }
+}

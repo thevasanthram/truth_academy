@@ -31,6 +31,12 @@ const courseData = [
   //   type: "image",
   // },
   {
+    src: demoVideo,
+    alt: "Course Introduction Video",
+    orientation: "portrait",
+    type: "video",
+  },
+  {
     src: course1,
     alt: "Course Poster 1",
     orientation: "portrait",
@@ -47,12 +53,6 @@ const courseData = [
     alt: "Course Poster 4",
     orientation: "portrait",
     type: "image",
-  },
-  {
-    src: demoVideo,
-    alt: "Course Introduction Video",
-    orientation: "portrait",
-    type: "video",
   },
 ];
 

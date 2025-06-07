@@ -342,4 +342,13 @@
   .v-header-slogan {
     font-size: 0.8rem;
   }
+
+  .v-header-nav-section {
+    height: 100vh;
+    width: 70%;
+  }
+
+  .v-header-mobile-menu {
+    width: 80%;
+  }
 }

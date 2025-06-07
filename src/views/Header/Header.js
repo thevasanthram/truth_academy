@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 import TruthAcademyLogo from "./../../images/logos/Truth Academy Logo.png";
@@ -31,10 +31,28 @@ const toSlug = (label) => `/${label.toLowerCase().replace(/\s+/g, "-")}`;
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const hamburgerMenu = useRef(null);
   const [openMenus, setOpenMenus] = useState({});
   const [dropdownPositions, setDropdownPositions] = useState({});
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        hamburgerMenu.current &&
+        !hamburgerMenu.current.contains(event.target)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const toggleHamburger = () => {
     setIsMenuOpen((prev) => !prev);
@@ -131,6 +149,7 @@ const Header = () => {
       <nav
         className={`v-header-nav-section ${isMenuOpen ? "show" : ""}`}
         aria-label="Main Navigation"
+        ref={hamburgerMenu}
       >
         {renderMobileMenu(navBarDivisions)}
       </nav>

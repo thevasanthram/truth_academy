@@ -12,7 +12,7 @@
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   color: white;
   padding: 120px 0;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   /* margin-top: 5%; */
   text-align: center;
   overflow: hidden;
@@ -236,5 +236,28 @@
 
   .hero-subtitle {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-hero {
+    padding: 65px 0;
+  }
+  .hero-subtitle {
+    width: 90%;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .hero-title {
+    font-size: 1.9rem;
+  }
+
+  .cards-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .home-why-choose {
+    padding: 0px 20px;
   }
 }

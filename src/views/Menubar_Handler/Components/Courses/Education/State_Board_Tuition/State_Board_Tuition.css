@@ -110,3 +110,14 @@
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 480px) {
+  .state-tuition-heading {
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+  }
+
+  .state-tuition-description {
+    line-height: 1.7;
+  }
+}
