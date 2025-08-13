@@ -1,35 +1,35 @@
 {
   "files": {
     "main.css": "/static/css/main.537d568f.css",
-    "main.js": "/static/js/main.c5cb843c.js",
+    "main.js": "/static/js/main.a2373705.js",
     "static/js/433.7cec1a70.chunk.js": "/static/js/433.7cec1a70.chunk.js",
     "static/js/184.9035c6c9.chunk.js": "/static/js/184.9035c6c9.chunk.js",
     "static/media/poster-video.mp4": "/static/media/poster-video.6d16b9c59f24da655437.mp4",
     "static/media/Spoken_English_Image.gif": "/static/media/Spoken_English_Image.e3c7f8afca521c2b25f6.gif",
     "static/media/Truth Academy Logo.png": "/static/media/Truth Academy Logo.0e0bf8a55c37cf7141d4.png",
-    "static/media/truth_academy4.jpeg": "/static/media/truth_academy4.82a4e82b44bf912ca03b.jpeg",
-    "static/media/truth_academy2.jpeg": "/static/media/truth_academy2.3f3fb1dc7ef6dc4751d5.jpeg",
-    "static/media/truth_academy5.jpeg": "/static/media/truth_academy5.099e196d567a9e6f7c2b.jpeg",
-    "static/media/truth_academy3.jpeg": "/static/media/truth_academy3.1e68047a9d0e695788ac.jpeg",
     "static/media/truth_academy1.jpeg": "/static/media/truth_academy1.d8c6468e42da56084c9d.jpeg",
     "static/media/CBSE_Tuition_Image.jpg": "/static/media/CBSE_Tuition_Image.e4f7055f4fc2152e09fe.jpg",
-    "static/media/poster1.jpeg": "/static/media/poster1.c69b67c9a1be849c17bb.jpeg",
-    "static/media/poster4.jpeg": "/static/media/poster4.aa40144098595a04aeed.jpeg",
-    "static/media/poster3.jpeg": "/static/media/poster3.a6d57ce051398faf60dc.jpeg",
+    "static/media/poster1.jpeg": "/static/media/poster1.d57579d4f486723030c5.jpeg",
+    "static/media/poster4.jpeg": "/static/media/poster4.02c8a5e2363c92e6d88e.jpeg",
+    "static/media/poster3.jpeg": "/static/media/poster3.93c2845ad60e684e06f2.jpeg",
     "static/media/State_Board_Tuition_Image.png": "/static/media/State_Board_Tuition_Image.d09a2ed6fc7d6df3658a.png",
+    "static/media/FounderImage.jpeg": "/static/media/FounderImage.0a8b8de4c4dba8c94573.jpeg",
+    "static/media/truth_academy5.jpeg": "/static/media/truth_academy5.c844cab5293851f206d1.jpeg",
     "static/media/poster2.jpeg": "/static/media/poster2.a8a4dd411800295c899a.jpeg",
+    "static/media/truth_academy4.jpeg": "/static/media/truth_academy4.b60f9f245efa0dd85ff2.jpeg",
+    "static/media/truth_academy2.jpeg": "/static/media/truth_academy2.d15654dc81f98e0bb423.jpeg",
+    "static/media/truth_academy3.jpeg": "/static/media/truth_academy3.bf3a3dd3e00d335a5327.jpeg",
     "static/media/Carnatic_Vocal_Image.png": "/static/media/Carnatic_Vocal_Image.7fbf14aee2669e1c9a3b.png",
-    "static/media/FounderImage.jpeg": "/static/media/FounderImage.c12cea92f493ecc0fa6e.jpeg",
     "static/media/Final_Cut_Pro_Image.jpg": "/static/media/Final_Cut_Pro_Image.23c4075c170f88610aa1.jpg",
     "static/media/Keyboard_And_Guitar_Image.webp": "/static/media/Keyboard_And_Guitar_Image.e60081af2696eb0d1d30.webp",
     "index.html": "/index.html",
     "main.537d568f.css.map": "/static/css/main.537d568f.css.map",
-    "main.c5cb843c.js.map": "/static/js/main.c5cb843c.js.map",
+    "main.a2373705.js.map": "/static/js/main.a2373705.js.map",
     "433.7cec1a70.chunk.js.map": "/static/js/433.7cec1a70.chunk.js.map",
     "184.9035c6c9.chunk.js.map": "/static/js/184.9035c6c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.537d568f.css",
-    "static/js/main.c5cb843c.js"
+    "static/js/main.a2373705.js"
   ]
 }
